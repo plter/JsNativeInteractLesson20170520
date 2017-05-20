@@ -1,0 +1,9 @@
+.classpath
+.settings
+bin
+gen
+libs/
+obj
+project.properties
+build/
+*~
