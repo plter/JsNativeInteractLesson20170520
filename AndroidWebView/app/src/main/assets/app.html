@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    (function () {
+
+
+        window.oncreateButton = function (btnId) {
+            document.write(btnId);
+
+            AndroidJs.addBtn(btnId);
+        };
+
+
+        AndroidJs.showToast("Hello Android");
+        AndroidJs.createButton("My Button");
+    })();
+
+</script>
+</body>
+</html>

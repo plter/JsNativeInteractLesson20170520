@@ -1,0 +1,32 @@
+<html>
+<body>
+Hello Android
+
+<div id="output">
+</div>
+
+<button id="btn-click-me">Click me</button>
+
+
+<script>
+    (function () {
+        function getObjectInfo(obj) {
+            var info = "";
+            for (var k in obj) {
+                info += k + "=" + obj[k] + "<br>";
+            }
+            return info;
+        }
+
+
+        var output = document.getElementById("output");
+
+        document.getElementById("btn-click-me").onclick = function () {
+            output.innerHTML = getObjectInfo(AndroidJs);
+
+            AndroidJs.showToast("Hello Android");
+        }
+    })();
+</script>
+</body>
+</html>

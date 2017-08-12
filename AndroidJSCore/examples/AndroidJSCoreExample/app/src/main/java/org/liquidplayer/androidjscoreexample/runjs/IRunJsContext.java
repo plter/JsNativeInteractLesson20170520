@@ -9,4 +9,12 @@ public interface IRunJsContext {
 
     void trace(String msg);
 
+    void load(String fileName);
+
+    int createButton();
+
+    void addButton(int btnId);
+
+    void setButtonText(int btnId, String text);
+
 }
